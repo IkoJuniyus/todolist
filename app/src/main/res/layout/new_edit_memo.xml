@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <!--<ImageView-->
+            <!--android:layout_width="35dp"-->
+            <!--android:layout_height="35dp"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:background="@android:color/transparent"-->
+            <!--android:onClick="backHome"-->
+            <!--android:padding="5dp"-->
+            <!--android:src="@drawable/ic_back" />-->
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="0dp"
+                android:gravity="center_vertical|start"
+                android:paddingLeft="16dp"
+                android:paddingRight="4dp"
+                android:text="Customize Memo"
+                android:textColor="#ffffff"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <!--<ImageView-->
+            <!--android:layout_width="35dp"-->
+            <!--android:layout_height="35dp"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:background="@android:color/transparent"-->
+            <!--android:onClick="openAddTask"-->
+            <!--android:padding="5dp"-->
+            <!--android:src="@drawable/ic_add" />-->
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/title_edit_memo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Title" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/date_edit_memo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:editable="false"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="Enter Date"
+        android:inputType="number">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/time_edit_memo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:editable="false"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="Enter Time"
+        android:inputType="number">
+
+    </EditText>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="440dp"
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/subject_edit_memo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_weight="1"
+            android:hint="Enter The Notes"></EditText>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/edit_record_memo"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/add_button_background"
+            android:text="Update" />
+
+        <Button
+            android:id="@+id/delete_record_memo"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/add_button_background"
+            android:text="Delete" />
+    </LinearLayout>
+
+</LinearLayout>

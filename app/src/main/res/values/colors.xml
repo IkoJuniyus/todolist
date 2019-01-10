@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Untuk Pertama Kita Hanya Mengganti-ganti Warna-->
+    <!-- Kita mencoba untuk memahaminya terlebih dahulu apa yang sebenarnya kita tulis-->
+    <color name="warnaUtama">#800000</color>
+    <color name="warnaUtamaGelap">#000000</color>
+    <color name="warnaAccent">#000080</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#c70d06</color>
+</resources>

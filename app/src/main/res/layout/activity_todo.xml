@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Todo">
+
+    <EditText
+        android:id="@+id/etTextTodo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="107dp"
+        android:layout_toStartOf="@+id/btnAddTodo"
+        android:ems="10"
+        android:hint="@string/input">
+
+        <requestFocus />
+    </EditText>
+
+    <ImageButton
+        android:id="@+id/btnAddTodo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="14dp"
+        android:text="@string/button"
+        android:onClick="addTaskNow"
+        android:src="@drawable/ic_add"/>
+
+    <ListView
+        android:id="@+id/lvTodo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btnAddTodo" >
+
+    </ListView>
+</RelativeLayout>

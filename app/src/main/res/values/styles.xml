@@ -1,0 +1,16 @@
+<resources>
+    <!-- Kita membuat style dengan nama BelajarTema yang nanti kita panggil di AndroidManifest -->
+    <!-- Untuk menghilangkan Bar Kalian bisa mengganti Light.DarkActionBar menjadi NoActionBar -->
+    <style name="BelajarTema" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/warnaUtama</item>
+        <item name="colorPrimaryDark">@color/warnaUtamaGelap</item>
+        <item name="colorAccent">@color/warnaAccent</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false
+        </item> <!-- Selain NoAction BAR perintah baris ini juga menghilangkan BAR -->
+    </style>
+
+    <style name="BelajarTema.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="BelajarTema.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

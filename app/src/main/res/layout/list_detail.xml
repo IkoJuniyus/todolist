@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:background="@drawable/memo_backgroun">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="4dp"
+        card_view:contentPadding="10dp"
+        card_view:cardUseCompatPadding="true">
+    <RelativeLayout
+    android:id="@+id/centerContent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:textSize="20sp"
+        android:gravity="top|center_horizontal"
+        android:text="date"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="4dp"
+        card_view:cardUseCompatPadding="true"
+        card_view:contentPadding="10dp">
+
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="6dp"
+            android:padding="3dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:gravity="top|center_horizontal"
+            android:text="date"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

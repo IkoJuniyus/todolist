@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <CheckBox
+        android:id="@+id/chkStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="CheckBox" />
+
+    <ImageButton
+        android:onClick="onDeleteButtonClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:id="@+id/delete"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_done"/>
+
+    <ImageButton
+        android:onClick="update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:id="@+id/update"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/delete"
+        android:layout_toStartOf="@+id/delete"
+        android:src="@drawable/ic_edit_black_24dp"/>
+</RelativeLayout>

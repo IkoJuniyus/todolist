@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="jazainc.jazato_dolist">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/BelajarTema">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/BelajarTema">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- membuat tombol back  DI HALAMAN satu -->
+        <activity android:name=".ListTask"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".ListTaskHistory"/>
+        <activity android:name=".TaskAdd"/>
+        <activity android:name=".UpdateHistory"/>
+        <activity android:name=".TaskModify"/>
+        <activity android:name=".About1"/>
+        <activity android:name=".NewMainMemo" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".NewAddMemo" android:parentActivityName=".NewMainMemo"/>
+        <activity android:name=".NewModifyMemo" android:parentActivityName=".NewMainMemo"/>
+        <!-- END membuat tombol back -->
+
+    </application>
+
+</manifest>
